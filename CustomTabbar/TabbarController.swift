@@ -25,16 +25,10 @@ class TabbarController: UITabBarController {
         view.addSubview(tabbarView)
    
         var leftAnchor: NSLayoutXAxisAnchor {
-            if #available(iOS 11.0, *) {
-                return self.view.safeAreaLayoutGuide.leftAnchor
-            }
             return self.view.leftAnchor
         }
         
         var rightAnchor: NSLayoutXAxisAnchor {
-            if #available(iOS 11.0, *) {
-                return self.view.safeAreaLayoutGuide.rightAnchor
-            }
             return self.view.rightAnchor
         }
         
